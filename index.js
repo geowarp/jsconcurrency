@@ -1,7 +1,4 @@
-// index.js
 import { fetchAllUrlsConcurrency } from "./fetchAllUrlsConcurrency.js";
-// If Node < v18, uncomment this:
-// import fetch from "node-fetch";
 
 async function run() {
   const urls = [
@@ -12,10 +9,7 @@ async function run() {
     "https://jsonplaceholder.typicode.com/todos/5",
   ];
 
-  // If Node >=18, just call:
   const responses = await fetchAllUrlsConcurrency(urls, 5);
-  // If Node <18, pass fetch explicitly:
-  // const responses = await fetchAllUrlsConcurrency(urls, 2, fetch);
 
   // Converting the Response objects into JSON
   const data = await Promise.all(responses.map((r) => r.json()));
