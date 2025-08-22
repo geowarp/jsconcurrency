@@ -16,17 +16,15 @@ corepack enable
 yarn
 ```
 
-Use the following commands to either Run or Test
+Use the following commands to run mock URLs in ```index.js```:
 
 ```bash
-# Run index on fetchAllUrlsConcurrency (mock):
-#"https://jsonplaceholder.typicode.com/todos/1",
-#"https://jsonplaceholder.typicode.com/todos/2",
-#"https://jsonplaceholder.typicode.com/todos/3",
-#"https://jsonplaceholder.typicode.com/todos/4",
-#"https://jsonplaceholder.typicode.com/todos/5",
 yarn start
-# Run test function on fetchAllUrlsConcurrency with Jest
+```
+
+Use the following commands to test ```fetchAllUrlsConcurrency``` function with Jest:
+
+```bash
 yarn test
 ```
 
