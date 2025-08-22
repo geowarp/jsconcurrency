@@ -1,4 +1,12 @@
 {
   "name": "jsconcurrency",
-  "packageManager": "yarn@4.9.3"
+  "type": "module",
+  "packageManager": "yarn@4.9.3",
+  "devDependencies": {
+    "jest": "^30.0.5"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules yarn jest"
+  }
 }
